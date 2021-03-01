@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GP_feature_selector</class>
+ <widget class="QMainWindow" name="GP_feature_selector">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>837</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GP_feature_selector</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0" colspan="4">
+     <widget class="QTabWidget" name="Features">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="feature_pts">
+       <attribute name="title">
+        <string>Feature Points</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="8" column="0">
+         <widget class="QLabel" name="desc_rwcf">
+          <property name="text">
+           <string>Round Window Closest to Footplate (RWCF)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="fps_x"/>
+        </item>
+        <item row="5" column="3">
+         <widget class="QLineEdit" name="oi_z"/>
+        </item>
+        <item row="5" column="4">
+         <widget class="QPushButton" name="set_oi">
+          <property name="text">
+           <string comment="0">SET OI - t</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLineEdit" name="lsc_z"/>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="oi_x"/>
+        </item>
+        <item row="9" column="2">
+         <widget class="QLineEdit" name="st_y"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="title_y_val">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	font-weight: bold;
+}</string>
+          </property>
+          <property name="text">
+           <string>Y Value</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="desc_fpi">
+          <property name="text">
+           <string>Footplate Inferior (FPI)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="fpi_z"/>
+        </item>
+        <item row="9" column="1">
+         <widget class="QLineEdit" name="st_x"/>
+        </item>
+        <item row="3" column="4">
+         <widget class="QPushButton" name="set_lsc">
+          <property name="text">
+           <string comment="0">SET LSC - e</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="4">
+         <widget class="QPushButton" name="set_st">
+          <property name="text">
+           <string comment="0">SET ST - o</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lsc_y"/>
+        </item>
+        <item row="1" column="4">
+         <widget class="QPushButton" name="set_fpi">
+          <property name="text">
+           <string comment="0">SET FPI - q</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="desc_rwff">
+          <property name="text">
+           <string>Round Window Furthest from Footplate (RWFF)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="desc_st">
+          <property name="text">
+           <string>Stapes (ST)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="desc_os">
+          <property name="text">
+           <string>Outer Ear Canal Superior (OS)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="3">
+         <widget class="QLineEdit" name="st_z"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="title_x_val">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	font-weight: bold;
+}</string>
+          </property>
+          <property name="text">
+           <string>X Value</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lsc_x"/>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLineEdit" name="ma_y"/>
+        </item>
+        <item row="7" column="4">
+         <widget class="QPushButton" name="set_rwff">
+          <property name="text">
+           <string comment="0">SET RWFF - u</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLineEdit" name="fps_z"/>
+        </item>
+        <item row="2" column="4">
+         <widget class="QPushButton" name="set_fps">
+          <property name="text">
+           <string comment="0">SET FPS - w</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="3">
+         <widget class="QLineEdit" name="rwff_z"/>
+        </item>
+        <item row="6" column="3">
+         <widget class="QLineEdit" name="os_z"/>
+        </item>
+        <item row="4" column="4">
+         <widget class="QPushButton" name="set_ma">
+          <property name="text">
+           <string comment="0">SET MA - r</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="fpi_x"/>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="title_z_val">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	font-weight: bold;
+}</string>
+          </property>
+          <property name="text">
+           <string>Z Value</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="desc_ma">
+          <property name="text">
+           <string>Mandible (MA)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QLineEdit" name="ma_z"/>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="fps_y"/>
+        </item>
+        <item row="10" column="2">
+         <widget class="QLineEdit" name="za_y"/>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="features">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	font-weight: bold;
+}</string>
+          </property>
+          <property name="text">
+           <string>Features</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="2">
+         <widget class="QLineEdit" name="rwcf_y"/>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="desc_za">
+          <property name="text">
+           <string>Zygomatic Arch (ZA)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="2">
+         <widget class="QLineEdit" name="os_y"/>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="ma_x"/>
+        </item>
+        <item row="8" column="3">
+         <widget class="QLineEdit" name="rwcf_z"/>
+        </item>
+        <item row="10" column="4">
+         <widget class="QPushButton" name="set_za">
+          <property name="text">
+           <string comment="0">SET ZA - p</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="2">
+         <widget class="QLineEdit" name="rwff_y"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="desc_lsc">
+          <property name="text">
+           <string>Lateral Semicircular Canal (LSC)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLineEdit" name="rwcf_x"/>
+        </item>
+        <item row="10" column="1">
+         <widget class="QLineEdit" name="za_x"/>
+        </item>
+        <item row="6" column="4">
+         <widget class="QPushButton" name="set_os">
+          <property name="text">
+           <string comment="0">SET OS - y</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="os_x"/>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLineEdit" name="rwff_x"/>
+        </item>
+        <item row="5" column="2">
+         <widget class="QLineEdit" name="oi_y"/>
+        </item>
+        <item row="10" column="3">
+         <widget class="QLineEdit" name="za_z"/>
+        </item>
+        <item row="8" column="4">
+         <widget class="QPushButton" name="set_rwcf">
+          <property name="text">
+           <string comment="0">SET RWCF - i</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="desc_oi">
+          <property name="text">
+           <string>Outer Ear Canal Inferior (OI)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="fpi_y"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="desc_fps">
+          <property name="text">
+           <string>Footplate Superior (FPS)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="register_pts">
+       <attribute name="title">
+        <string>Registration Points</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="sk_l_y"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="sk_l_x"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="sk_r_reg_label">
+          <property name="text">
+           <string>Skull Point R</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="sk_l_z"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="x_val_reg_label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>X Value</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="jp_r_reg_label">
+          <property name="text">
+           <string>Jaw Point R</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="zap_l_reg_label">
+          <property name="text">
+           <string>Zygomatic Arch Point L</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="sk_l_reg_label">
+          <property name="text">
+           <string>Skull Point L</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="z_val_reg_label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Z Value</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="features_reg_label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Features</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="tp_r__reg_label">
+          <property name="text">
+           <string>Test Point R</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="tp_l_reg_label">
+          <property name="text">
+           <string>Test Point L</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="y_val_reg_label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Y Value</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="zap_r_reg_label">
+          <property name="text">
+           <string>Zygomatic Arch Point R</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="jp_l_reg_label">
+          <property name="text">
+           <string>Jaw Point L</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QPushButton" name="set_sk_l">
+          <property name="text">
+           <string>SET SK_L (a)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QPushButton" name="set_sk_r">
+          <property name="text">
+           <string>SET SK_R (s)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QPushButton" name="set_jp_l">
+          <property name="text">
+           <string>SET JP_L (d)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4">
+         <widget class="QPushButton" name="set_jp_r">
+          <property name="text">
+           <string>SET JP_R (f)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="4">
+         <widget class="QPushButton" name="set_zap_l">
+          <property name="text">
+           <string>SET ZAP_L (g)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="4">
+         <widget class="QPushButton" name="set_zap_r">
+          <property name="text">
+           <string>SET ZAP_R (h)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="4">
+         <widget class="QPushButton" name="set_tp_l">
+          <property name="text">
+           <string>SET TP_L (j)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="4">
+         <widget class="QPushButton" name="set_tp_r">
+          <property name="text">
+           <string>SET_TP_R (k)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="sk_r_x"/>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="jp_l_x"/>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="jp_r_x"/>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="zap_l_x"/>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="sk_r_y"/>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="jp_l_y"/>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLineEdit" name="sk_r_z"/>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLineEdit" name="jp_l_z"/>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLineEdit" name="jp_r_y"/>
+        </item>
+        <item row="4" column="3">
+         <widget class="QLineEdit" name="jp_r_z"/>
+        </item>
+        <item row="5" column="2">
+         <widget class="QLineEdit" name="zap_l_y"/>
+        </item>
+        <item row="5" column="3">
+         <widget class="QLineEdit" name="zap_l_z"/>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="zap_r_x"/>
+        </item>
+        <item row="6" column="2">
+         <widget class="QLineEdit" name="zap_r_y"/>
+        </item>
+        <item row="6" column="3">
+         <widget class="QLineEdit" name="zap_r_z"/>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLineEdit" name="tp_l_x"/>
+        </item>
+        <item row="7" column="2">
+         <widget class="QLineEdit" name="tp_l_y"/>
+        </item>
+        <item row="8" column="2">
+         <widget class="QLineEdit" name="tp_r_y"/>
+        </item>
+        <item row="8" column="3">
+         <widget class="QLineEdit" name="tp_r_z"/>
+        </item>
+        <item row="7" column="3">
+         <widget class="QLineEdit" name="tp_l_z"/>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLineEdit" name="tp_r_x"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLineEdit" name="filename_box">
+      <property name="placeholderText">
+       <string>filename</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="compute_axis">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: green;
+}</string>
+      </property>
+      <property name="text">
+       <string>COMPUTE AXIS</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="2" colspan="3">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>TRACKING</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="title_curr_values">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Current Wand Coordinates</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="z_curr">
+         <property name="text">
+          <string>-1000</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="y_curr">
+         <property name="text">
+          <string>-1000</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="x_curr">
+         <property name="text">
+          <string>-1000</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Current Bed Coordinates</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>-1000</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>-1000</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>-1000</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="import_values">
+      <property name="text">
+       <string>IMPORT VALUES</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QCheckBox" name="checkBox">
+      <property name="text">
+       <string>Include Registration Points in File Output</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QPushButton" name="save_values">
+      <property name="text">
+       <string>SAVE VALUES</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>837</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
