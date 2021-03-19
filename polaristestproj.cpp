@@ -8,16 +8,16 @@
 #include <iostream>
 
 // List of all features for selection
-QString buttonNames [8] = {"cl", "mn", "os", "rwa", "rwp", "lli"};
+QString buttonNames [6] = {"cl", "mn", "os", "rwa", "rwp", "lli"};
 int buttonNamesSize = sizeof(buttonNames)/sizeof(buttonNames[0]);
-QString keys_array [8] = {"q", "w", "e", "r","t","y"};
+QString keys_array [6] = {"q", "w", "e", "r","t","y"};
 
 //Listi of matching features for registration only
 QString buttonNames2 [8] = {"sk_l", "sk_r", "jp_l", "jp_r", "zap_l", "zap_r", "tp_l", "tp_r"};
 int buttonNamesSize2 = sizeof(buttonNames2)/sizeof(buttonNames2[0]);
 QString keys_array2 [8] = {"a","s","d","f","g","h","j","k"};
 
-QString buttonNamesAll [16] = {"cl", "mn", "os", "rwa", "rwp", "lli", "jp_l", "jp_r", "sk_l", "sk_r", "tp_l", "tp_r", "zap_l", "zap_r" };
+QString buttonNamesAll [14] = {"cl", "mn", "os", "rwa", "rwp", "lli", "jp_l", "jp_r", "sk_l", "sk_r", "tp_l", "tp_r", "zap_l", "zap_r" };
 int buttonNamesAllSize = sizeof(buttonNamesAll)/sizeof(buttonNamesAll[0]);
 
 PolarisTestProj::PolarisTestProj(QWidget *parent)
@@ -52,7 +52,7 @@ PolarisTestProj::PolarisTestProj(QWidget *parent)
     //--------------------------------------------------------------------------
 
     // Code to loop through all set buttons and link to the set button pressed function
-    QPushButton *setButtons[10];
+    QPushButton *setButtons[6];
     for(int i =0; i<buttonNamesSize; i++){
         QString theSetButtonName = "set_" + buttonNames[i];
         setButtons[i] = PolarisTestProj::findChild<QPushButton *>(theSetButtonName);
